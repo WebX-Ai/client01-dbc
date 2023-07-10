@@ -16,12 +16,13 @@
   }
 }
 
+h1 {
+  @apply text-3xl font-bold text-primary ;
+}
+
+h2 {
+  @apply text-xl font-bold text-primary;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }

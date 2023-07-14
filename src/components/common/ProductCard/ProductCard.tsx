@@ -19,7 +19,7 @@ const ProductCard: React.FC<{
       </div>
       <div className="absolute bottom-2">
         <h5 className="text-2xl font-black text-primary">{company_name}</h5>
-        <p className="w-[100px] text-xs font-medium">{company_tagline} </p>
+        <p className="w-[150px] text-xs font-medium">{company_tagline} </p>
       </div>
     </div>
   );

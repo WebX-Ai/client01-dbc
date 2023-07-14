@@ -7,12 +7,12 @@ const AllProducts = () => {
     <div className="px-6 py-10 space-y-10">
       <h1 className="text-center sm:text-left">Products</h1>
       <div className="flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap">
-        {products.map(({ id, product_name, thumbnail }) => (
+        {products.map(({ id, product_name, thumbnail,desc }) => (
           <Link href={`/products/${product_name}`} key={id}>
             <ProductCard
               company_name={product_name}
               company_image={thumbnail}
-              company_tagline="Laptops"
+              company_tagline={desc}
             />
           </Link>
         ))}

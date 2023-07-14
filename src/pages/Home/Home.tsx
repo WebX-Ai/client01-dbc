@@ -29,12 +29,12 @@ const Home = () => {
       <div className="px-6 py-10 space-y-8 flex flex-col items-center">
         <h1 className="text-center">Products</h1>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-8 ">
-          {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+          {products.slice(0, 4).map(({ id, product_name, desc, thumbnail }) => (
             <Link href={`/products/${product_name}`} key={id}>
               <ProductCard
                 company_name={product_name}
                 company_image={thumbnail}
-                company_tagline="Laptops"
+                company_tagline={desc}
               />
             </Link>
           ))}

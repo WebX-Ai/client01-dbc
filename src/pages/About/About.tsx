@@ -7,6 +7,7 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 //assets
 import Logo from "@/assets/Images/logo.png";
 import { useContext, useState } from "react";
+import { products } from "@/data/data";
 
 const About = () => {
   //   const [products, setProducts] = useState();
@@ -94,21 +95,19 @@ const About = () => {
           </h2>
           <div className="flex gap-4 w-full items-center justify-center ">
             <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
-              {Array(5)
-                .fill(0)
-                .map((d, index) => (
-                  <div
-                    className="relative h-[100px] w-[200px] overflow-hidden "
-                    key={index}
-                  >
-                    <Image
-                      src={"/images/products/lenovo.png"}
-                      alt="product"
-                      fill
-                      className=" object-contain"
-                    />
-                  </div>
-                ))}
+              {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+                <div
+                  className="relative h-[100px] w-[200px] overflow-hidden "
+                  key={id}
+                >
+                  <Image
+                    src={thumbnail}
+                    alt="product"
+                    fill
+                    className=" object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -118,21 +117,19 @@ const About = () => {
           </h2>
           <div className="flex gap-4 w-full items-center justify-center ">
             <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
-              {Array(4)
-                .fill(0)
-                .map((d, index) => (
-                  <div
-                    className="relative h-[100px] w-[200px] overflow-hidden "
-                    key={index}
-                  >
-                    <Image
-                      src={"/images/products/lenovo.png"}
-                      alt="product"
-                      fill
-                      className=" object-contain"
-                    />
-                  </div>
-                ))}
+            {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+                <div
+                  className="relative h-[100px] w-[200px] overflow-hidden "
+                  key={id}
+                >
+                  <Image
+                    src={thumbnail}
+                    alt="product"
+                    fill
+                    className=" object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -140,21 +137,19 @@ const About = () => {
           <h2 className="text-white text-center">For Consumables </h2>
           <div className="flex gap-4 w-full items-center justify-center ">
             <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
-              {Array(5)
-                .fill(0)
-                .map((d, index) => (
-                  <div
-                    className="relative h-[100px] w-[200px] overflow-hidden "
-                    key={index}
-                  >
-                    <Image
-                      src={"/images/products/lenovo.png"}
-                      alt="product"
-                      fill
-                      className=" object-contain"
-                    />
-                  </div>
-                ))}
+            {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+                <div
+                  className="relative h-[100px] w-[200px] overflow-hidden "
+                  key={id}
+                >
+                  <Image
+                    src={thumbnail}
+                    alt="product"
+                    fill
+                    className=" object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

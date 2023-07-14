@@ -5,6 +5,7 @@ import Image from "next/image";
 import HeroImage from "@/assets/Images/hero.webp";
 import ProductCard from "@/components/common/ProductCard/ProductCard";
 import Link from "next/link";
+import { products } from "@/data/data";
 const Home = () => {
   return (
     <div>
@@ -28,10 +29,15 @@ const Home = () => {
       <div className="px-6 py-10 space-y-8 flex flex-col items-center">
         <h1 className="text-center">Products</h1>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-8 ">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+            <Link href={`/products/${product_name}`} key={id}>
+              <ProductCard
+                company_name={product_name}
+                company_image={thumbnail}
+                company_tagline="Laptops"
+              />
+            </Link>
+          ))}
         </div>
         <Link href={"/products"} className="">
           <Button label="And many more..." outlined />
@@ -42,21 +48,19 @@ const Home = () => {
         <h1 className="text-white text-center">Brands we trust</h1>
         <div className="flex gap-4 w-full items-center justify-center ">
           <div className="flex items-center justify-center sm:w-9/12 gap-5 flex-wrap">
-            {Array(10)
-              .fill(0)
-              .map((d, index) => (
-                <div
-                  className="relative h-[60px] sm:h-[100px] sm:w-[200px] w-[100px] overflow-hidden "
-                  key={index}
-                >
-                  <Image
-                    src={"/images/products/lenovo.png"}
-                    alt="product"
-                    fill
-                    className=" object-contain"
-                  />
-                </div>
-              ))}
+            {products.map(({ id, product_name, thumbnail }, index) => (
+              <div
+                className="relative h-[60px] sm:h-[100px] sm:w-[200px] w-[100px] overflow-hidden "
+                key={index}
+              >
+                <Image
+                  src={thumbnail}
+                  alt={product_name}
+                  fill
+                  className=" object-contain  "
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

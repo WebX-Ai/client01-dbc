@@ -44,7 +44,7 @@ const Home = () => {
         </Link>
       </div>
       {/* Brands we trust */}
-      <div className="bg-secondary p-6 w-full space-y-4">
+      <div className="bg-[#FFEEDD] p-6 w-full space-y-4">
         <h1 className="text-white text-center">Brands we trust</h1>
         <div className="flex gap-4 w-full items-center justify-center ">
           <div className="flex items-center justify-center sm:w-9/12 gap-5 flex-wrap">

@@ -88,9 +88,9 @@ const About = () => {
           you.
         </p>
       </div>
-      <div className="bg-secondary p-6 space-y-16 w-full">
+      <div className="bg-[#FFEEDD] p-6 space-y-16 w-full">
         <div className="space-y-4">
-          <h2 className="text-white text-center">
+          <h2 className="text-primary text-center">
             For Mobile Computing, Data Capture, RFID & Thermal Printers.
           </h2>
           <div className="flex gap-4 w-full items-center justify-center ">
@@ -112,7 +112,7 @@ const About = () => {
           </div>
         </div>
         <div className="space-y-4">
-          <h2 className="text-white text-center">
+          <h2 className="text-primary text-center">
             For Barcode Designing Software{" "}
           </h2>
           <div className="flex gap-4 w-full items-center justify-center ">
@@ -134,7 +134,7 @@ const About = () => {
           </div>
         </div>
         <div className="space-y-4">
-          <h2 className="text-white text-center">For Consumables </h2>
+          <h2 className="text-primary text-center">For Consumables </h2>
           <div className="flex gap-4 w-full items-center justify-center ">
             <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
             {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (

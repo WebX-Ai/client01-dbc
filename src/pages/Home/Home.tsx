@@ -18,9 +18,8 @@ const Home = () => {
         <div className="absolute h-full w-full bg-black/30"></div>
         <div className="w-full absolute bottom-0 p-6 flex flex-col items-center space-y-3 text-center text-white">
           <h1 className="text-white"> Dream Big Corporation</h1>
-          <p className="font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            accusamus incidunt, rerum debitis sed possimus molestias veniam
+          <p className="font-medium ">
+            Bestsellers in Bar code and assets managing platforms
           </p>
           <Button label="Get in touch" />
         </div>
@@ -45,7 +44,7 @@ const Home = () => {
       </div>
       {/* Brands we trust */}
       <div className="bg-[#FFEEDD] p-6 w-full space-y-4">
-        <h1 className="text-white text-center">Brands we trust</h1>
+        <h1 className="text-primary text-center">Brands we trust</h1>
         <div className="flex gap-4 w-full items-center justify-center ">
           <div className="flex items-center justify-center sm:w-9/12 gap-5 flex-wrap">
             {products.map(({ id, product_name, thumbnail }, index) => (

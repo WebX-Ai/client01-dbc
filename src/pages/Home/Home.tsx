@@ -29,7 +29,7 @@ const Home = () => {
         <h1 className="text-center">Products</h1>
         <div className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-8 ">
           {products.slice(0, 4).map(({ id, product_name, desc, thumbnail }) => (
-            <Link href={`/products/${product_name}`} key={id}>
+            <Link href={`/products/${product_name.toLowerCase()}`} key={id}>
               <ProductCard
                 company_name={product_name}
                 company_image={thumbnail}

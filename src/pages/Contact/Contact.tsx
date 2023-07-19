@@ -2,7 +2,7 @@ import FormInputLabel from "@/components/FormInputLabel/FormInputLabel";
 
 const Contact = () => {
   return (
-    <div className=" space-y-6 p-6">
+    <div className=" space-y-6 p-6 container m-auto">
       <h1 className="text-center">Contact Us</h1>
       <div className="flex flex-col sm:flex-row-reverse gap-10">
         <form action="" className="space-y-4 sm:flex-1">

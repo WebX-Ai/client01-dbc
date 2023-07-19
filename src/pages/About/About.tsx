@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div className="space-y-5 flex flex-col items-center pt-6 font-normal text-sm">
       <h1 className="text-center">About Us</h1>
-      <div className="sm:flex sm:gap-5 px-6 w-full">
+      <div className="sm:flex sm:gap-5 px-6 w-full container m-auto">
         <div className="hidden sm:block space-y-2">
           <p>
             We, at DBC, started our journey with the only mission to provide
@@ -39,7 +39,7 @@ const About = () => {
           <Image src={Logo} alt="logo" fill className="object-contain" />
         </div>
       </div>
-      <div className=" space-y-2 px-6">
+      <div className=" space-y-2 px-6 container m-auto">
         <p className="block sm:hidden">
           We, at DBC, started our journey with the only mission to provide
           customer delight by understanding the customer specific requirements,
@@ -88,68 +88,70 @@ const About = () => {
           you.
         </p>
       </div>
-      <div className="bg-[#FFEEDD] p-6 space-y-16 w-full">
-        <div className="space-y-4">
-          <h2 className="text-primary text-center">
-            For Mobile Computing, Data Capture, RFID & Thermal Printers.
-          </h2>
-          <div className="flex gap-4 w-full items-center justify-center ">
-            <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
-              {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
-                <div
-                  className="relative h-[100px] w-[200px] overflow-hidden "
-                  key={id}
-                >
-                  <Image
-                    src={thumbnail}
-                    alt="product"
-                    fill
-                    className=" object-contain"
-                  />
-                </div>
-              ))}
+      <div className="w-full bg-[#FFEEDD]">
+        <div className="bg-[#FFEEDD] p-6 container m-aut space-y-16 w-full ">
+          <div className="space-y-4">
+            <h2 className="text-primary text-center">
+              For Mobile Computing, Data Capture, RFID & Thermal Printers.
+            </h2>
+            <div className="flex gap-4 w-full items-center justify-center ">
+              <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
+                {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+                  <div
+                    className="relative h-[100px] w-[200px] overflow-hidden "
+                    key={id}
+                  >
+                    <Image
+                      src={thumbnail}
+                      alt="product"
+                      fill
+                      className=" object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="space-y-4">
-          <h2 className="text-primary text-center">
-            For Barcode Designing Software{" "}
-          </h2>
-          <div className="flex gap-4 w-full items-center justify-center ">
-            <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
-            {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
-                <div
-                  className="relative h-[100px] w-[200px] overflow-hidden "
-                  key={id}
-                >
-                  <Image
-                    src={thumbnail}
-                    alt="product"
-                    fill
-                    className=" object-contain"
-                  />
-                </div>
-              ))}
+          <div className="space-y-4">
+            <h2 className="text-primary text-center">
+              For Barcode Designing Software{" "}
+            </h2>
+            <div className="flex gap-4 w-full items-center justify-center ">
+              <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
+                {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+                  <div
+                    className="relative h-[100px] w-[200px] overflow-hidden "
+                    key={id}
+                  >
+                    <Image
+                      src={thumbnail}
+                      alt="product"
+                      fill
+                      className=" object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="space-y-4">
-          <h2 className="text-primary text-center">For Consumables </h2>
-          <div className="flex gap-4 w-full items-center justify-center ">
-            <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
-            {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
-                <div
-                  className="relative h-[100px] w-[200px] overflow-hidden "
-                  key={id}
-                >
-                  <Image
-                    src={thumbnail}
-                    alt="product"
-                    fill
-                    className=" object-contain"
-                  />
-                </div>
-              ))}
+          <div className="space-y-4">
+            <h2 className="text-primary text-center">For Consumables </h2>
+            <div className="flex gap-4 w-full items-center justify-center ">
+              <div className="flex items-center justify-center w-9/12 gap-5 flex-wrap">
+                {products.slice(0, 4).map(({ id, product_name, thumbnail }) => (
+                  <div
+                    className="relative h-[100px] w-[200px] overflow-hidden "
+                    key={id}
+                  >
+                    <Image
+                      src={thumbnail}
+                      alt="product"
+                      fill
+                      className=" object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ const ProductCard: React.FC<{
   company_tagline: string;
 }> = ({ company_name, company_image, company_tagline }) => {
   return (
-    <div className="relative w-72 h-56 shadow-md hover:shadow-lg overflow-hidden rounded-2xl p-5 space-y-2 bottom-1 border">
+    <div className="relative w-72 h-56 shadow-md hover:shadow-lg overflow-hidden rounded-2xl p-5 space-y-2 bottom-1 border bg-white">
       <div className="relative h-28 w-full">
         <Image src={company_image} alt="img" fill className="object-contain" />
       </div>

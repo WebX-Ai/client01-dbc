@@ -9,11 +9,15 @@ import { products } from "@/data/data";
 const Home = () => {
   return (
     <div>
-      <div className="w-full bg-secondary/10 h-[700px] relative">
+      <div className="w-full bg-secondary/10 h-[700px] relative overflow-hidden">
         <div className="absolute h-full w-full">
-          <div className="relative h-full w-full">
-            <Image src={HeroImage} alt="hero" fill className="object-cover" />
-          </div>
+          <video
+            src="/videos/hero.mp4"
+            // preload=
+            autoPlay={true}
+            loop
+            className="min-h-full min-w-full object-cover"
+          />
         </div>
         <div className="absolute h-full w-full bg-black/30"></div>
         <div className="w-full absolute bottom-0 p-6 flex flex-col items-center space-y-3 text-center text-white">

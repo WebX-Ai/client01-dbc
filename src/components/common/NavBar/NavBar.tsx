@@ -38,7 +38,7 @@ const NavBar = () => {
     {
       id: 3,
       name: "Products",
-      path: "/products",
+      path: "/#",
       subLinks: [
         { name: "SAFETY SOLUTIONS", path: "/products/safety-solutions" },
         {

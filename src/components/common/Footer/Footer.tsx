@@ -23,21 +23,33 @@ const Footer = () => {
               </div>
             </Link>
             <div className="flex gap-5">
-              <Link href={""}>
+              <Link
+                href={""}
+                className="hover:bg-white hover:text-primary transition-all ease-in p-3 rounded-full"
+              >
                 <FbIcon />
               </Link>
-              <Link href={""}>
+              <Link
+                href={""}
+                className="hover:bg-white hover:text-primary transition-all ease-in p-3 rounded-full"
+              >
                 <TwitterIcon />
               </Link>
-              <Link href={""}>
+              <Link
+                href={""}
+                className="hover:bg-white hover:text-primary transition-all ease-in p-3 rounded-full"
+              >
                 <LinkedinIcon />
               </Link>
-              <Link href={""}>
+              <Link
+                href={""}
+                className="hover:bg-white hover:text-primary transition-all ease-in p-3 rounded-full"
+              >
                 <InstaIcon />
               </Link>
             </div>
           </div>
-          {/* <p>Copyright 2022 Deam Big Corporation.</p> */}
+          <p>© Copyright 2022 Deam Big Corporation.</p>
         </div>
         <div className="space-y-5 sm:flex flex-col items-end">
           <p className="w-full text-left sm:text-right">
@@ -46,8 +58,11 @@ const Footer = () => {
             <br /> Kongaon, Kalyan West, <br />
             Thane mumbai- 421311
           </p>
-          <div className=" flex flex-col sm:flex-row gap-4">
-            <Link href={"/contact-us"}>Contact </Link>
+          <div className=" flex flex-col sm:flex-row gap-4  text-lg">
+            <Link href={"/contact-us"} className="hover:underline">
+              About us
+            </Link>
+            <Link href={"/contact-us"} className="hover:underline">Contact us</Link>
           </div>
         </div>
       </div>

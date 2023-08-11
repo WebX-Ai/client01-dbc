@@ -1,19 +1,62 @@
 import FormInputLabel from "@/components/FormInputLabel/FormInputLabel";
+import Image from "next/image";
 
+import ContactUsImg from "@/assets/Images/Contact-us.jpg";
 const Contact = () => {
   return (
-    <div className=" space-y-6 p-6 container m-auto">
-      <h1 className="text-center">Contact Us</h1>
+    <div className=" space-y-8 p-6 container m-auto">
+      <Image src={ContactUsImg} height={300} alt="contact" />
+      <div className="space-y-2">
+        <h1>How to Contact Dream Big Corporation</h1>
+        <p>
+          Welcome to Dream Big Corporation Contact Us page! Dream Big
+          Corporation is conveniently located inKongaon, Kalyan West, Thane
+          mumbai and we provide products and services to companies nationwide.
+          Please feel free to contact us by phone, mail or email. You&apos;ll
+          find our contact information below. Additionally, you may talk with
+          one of our customer care consultants directly using our online chat
+          feature. We&apos;re happy to answer your questions and provide you
+          with more information about Dream Big Corporation huge selection of
+          products and services.
+        </p>
+      </div>
+      <div className="flex gap-20">
+        <div className="w-[300px]">
+          <h2 className="text-lg">Address</h2>
+          <p>
+            Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
+            Road, Kongaon, Kalyan West, Thane mumbai- 421311
+          </p>
+        </div>
+        <div className="">
+          <p>
+            <span className="font-bold">Email:</span> dbc@gmail.com
+          </p>
+          <p>
+            <span className="font-bold">Phone Number:</span> +91 9967489992 /
+            +91 9527376669
+          </p>
+
+          <p>
+            <span className="font-bold">Office Hours:</span> Monday - Friday 8
+            a.m. - 5 p.m. IST
+          </p>
+        </div>
+      </div>
       <div className="flex flex-col sm:flex-row-reverse gap-10">
         <form action="" className="space-y-4 sm:flex-1">
           <FormInputLabel label="Name" placeholder="john doe" type="text" />
-          <FormInputLabel label="Email" placeholder="johndoe@gmail.com" type="email" />
+          <FormInputLabel
+            label="Email"
+            placeholder="johndoe@gmail.com"
+            type="email"
+          />
           <FormInputLabel
             label="Mobile No."
             placeholder="+91 9158321091"
             type="tel"
           />
-          <FormInputLabel label="Message"  type="text" />
+          <FormInputLabel label="Message" type="text" />
           <button className="bg-primary text-white px-4 py-2 rounded-md font-medium">
             Send
           </button>

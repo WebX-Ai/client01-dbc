@@ -10,8 +10,8 @@ const Contact = () => {
         <h1>How to Contact Dream Big Corporation</h1>
         <p>
           Welcome to Dream Big Corporation Contact Us page! Dream Big
-          Corporation is conveniently located inKongaon, Kalyan West, Thane
-          mumbai and we provide products and services to companies nationwide.
+          Corporation is conveniently located in Kongaon, Kalyan West, Thane
+          Mumbai and we provide products and services to companies nationwide.
           Please feel free to contact us by phone, mail or email. You&apos;ll
           find our contact information below. Additionally, you may talk with
           one of our customer care consultants directly using our online chat
@@ -24,13 +24,13 @@ const Contact = () => {
         <div className="w-[300px]">
           <h2 className="text-lg">Address</h2>
           <p>
-            Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
+          DREAM BIG CORPORATION, Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
             Road, Kongaon, Kalyan West, Thane mumbai- 421311
           </p>
         </div>
         <div className="">
           <p>
-            <span className="font-bold">Email:</span> dbc@gmail.com
+            <span className="font-bold">Email:</span> dreambigcorporation22@gmail.com
           </p>
           <p>
             <span className="font-bold">Phone Number:</span> +91 9967489992 /
@@ -78,9 +78,8 @@ const Contact = () => {
           <div className="space-y-2 sm:hidden">
             <h2 className="sm:text-white">Address</h2>
             <p>
-              GROUND FLOOR, HARIOM BUILDING, NR. AMBIKA MEDICAL, WATER SUPPLY
-              ROAD, OPP KALYAN BHIWANDI ROAD, KONGAON, KALYAN (W) THANE
-              MUMBAI-421311
+            Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
+            Road, Kongaon, Kalyan West, Thane mumbai- 421311
             </p>
           </div>
         </div>

@@ -20,11 +20,11 @@ const page = () => {
         <Image src={Banner} alt="contact" fill className="object-cover"/>
       </div>
       <div className="space-y-2">
-        <h1 className="text-2xl">OUR STORY BEGINS IN 1980</h1>
+        <h1 className="text-2xl">OUR STORY</h1>
         <p className="text-lg font-light">
           Welcome to Dream Big Corporation Contact Us page! Dream Big
-          Corporation is conveniently located inKongaon, Kalyan West, Thane
-          mumbai and we provide products and services to companies nationwide.
+          Corporation is conveniently located in Kongaon, Kalyan West, Thane
+          Mumbai and we provide products and services to companies nationwide.
           Please feel free to contact us by phone, mail or email. You&apos;ll
           find our contact information below. Additionally, you may talk with
           one of our customer care consultants directly using our online chat

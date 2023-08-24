@@ -15,10 +15,10 @@ const Footer = () => {
   return (
     <div className=" bg-primary w-full">
       <div className="container m-auto p-6  text-white flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 ">
-        <div className="space-y-6">
-          <div className="flex justify-between items-center sm:gap-5">
-            <Link href={"/"}>
-              <div className="relative h-[50px] w-[130px] ">
+        <div className="space-y-6 sm:space-y-2">
+          <div className="flex-col sm:flex sm:justify-between sm:items-center">
+            <Link href={"/"} className="w-fit h-fit">
+              <div className="relative h-[50px] w-[130px]  ">
                 <Image src={Logo} alt="logo" fill className="object-contain" />
               </div>
             </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
           <p>© Copyright 2022 Deam Big Corporation.</p>
         </div>
-        <div className="space-y-5 sm:flex flex-col items-end">
+        <div className="space-y-5 sm:space-y-2 sm:flex flex-col items-end">
           <p className="w-full text-left sm:text-right">
             Ground Floor, Hariom Building,
             <br /> Nr. Ambika Medical, Water Supply Road,

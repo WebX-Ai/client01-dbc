@@ -40,8 +40,8 @@ const page = () => {
           Get the job done with the right equipment
         </h1>
         <p className="text-lg font-light">
-          AB&R® partners with the best hardware providers to bring you the
-          highest quality products. Rugged Tablet Computers from AB&R® include
+          Dream Big Corporation partners with the best hardware providers to bring you the
+          highest quality products. Rugged Tablet Computers from Dream Big Corporation include
           Android and Windows OS. Screen and memory size on these tablets are
           enterprise-grade with tested ruggedness for those harsh environments.
           To Learn More click on the model information of the products below. If

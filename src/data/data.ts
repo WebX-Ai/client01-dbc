@@ -21,7 +21,8 @@ export const products = [
       "/images/products/dlink/product2.png",
       "/images/products/dlink/product3.png",
       "/images/products/dlink/product4.png",
-    ],  },
+    ],
+  },
   {
     id: 3,
     product_name: "GoDEX",
@@ -45,7 +46,8 @@ export const products = [
       "/images/products/dell/product2.png",
       "/images/products/dell/product3.jpeg",
       "/images/products/dell/product4.png",
-    ],    },
+    ],
+  },
 
   {
     id: 5,
@@ -58,7 +60,8 @@ export const products = [
       "/images/products/acer/product2.png",
       "/images/products/acer/product3.jpeg",
       "/images/products/acer/product4.jpeg",
-    ],  },
+    ],
+  },
   {
     id: 6,
     product_name: "RUGTEK",
@@ -70,7 +73,8 @@ export const products = [
       "/images/products/rugtek/product2.jpeg",
       "/images/products/rugtek/product3.jpg",
       "/images/products/rugtek/product4.jpg",
-    ],  },
+    ],
+  },
   {
     id: 7,
     product_name: "TSC",
@@ -82,7 +86,8 @@ export const products = [
       "/images/products/tsc/product2.jpeg",
       "/images/products/tsc/product3.jpg",
       "/images/products/tsc/product4.webp",
-    ],  },
+    ],
+  },
   {
     id: 8,
     product_name: "ZEBRA",
@@ -94,7 +99,8 @@ export const products = [
       "/images/products/zebra/product2.jpg",
       "/images/products/zebra/product3.png",
       "/images/products/zebra/product4.jpg",
-    ],  },
+    ],
+  },
   {
     id: 9,
     product_name: "HONEYWELL",
@@ -106,7 +112,8 @@ export const products = [
       "/images/products/honeywell/product2.jpg",
       "/images/products/honeywell/product3.webp",
       "/images/products/honeywell/product4.jpeg",
-    ],  },
+    ],
+  },
   {
     id: 10,
     product_name: "EPSON",
@@ -118,5 +125,22 @@ export const products = [
       "/images/products/epson/product2.webp",
       "/images/products/epson/product3.jpg",
       "/images/products/epson/product4.jpg",
-    ],  },
+    ],
+  },
+  {
+    id: 11,
+    product_name: "",
+    thumbnail: "/images/products/newland-emea-vector-logo.png",
+    desc: "",
+
+    products: [],
+  },
+  {
+    id: 12,
+    product_name: "",
+    thumbnail: "/images/products/decode_entertainment_logo_concept_by_yaili0108_demijp5-pre.png",
+    desc: "",
+
+    products: [],
+  },
 ];

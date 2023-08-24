@@ -40,7 +40,7 @@ const page = () => {
         </h1>
         <p className="text-lg font-light">
           Spare batteries, additional charging stations, charging cradles, belt
-          clips, and other hands-free accessories are available from AB&R®.
+          clips, and other hands-free accessories are available from Dream Big Corporation ®.
         </p>
       </div>
     </div>

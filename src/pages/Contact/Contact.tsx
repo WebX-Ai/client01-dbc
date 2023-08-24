@@ -7,16 +7,16 @@ const Contact = () => {
     <div className=" space-y-8 p-6 container m-auto">
       <Image src={ContactUsImg} height={300} alt="contact" />
       <div className="space-y-2">
-        <h1>How to Contact Dream Big Corporation</h1>
+        <h1>How to Contact Dream Big Corporation </h1>
         <p>
-          Welcome to Dream Big Corporation Contact Us page! Dream Big
+          Welcome to Dream Big Corporation  Contact Us page! Dream Big
           Corporation is conveniently located in Kongaon, Kalyan West, Thane
           Mumbai and we provide products and services to companies nationwide.
           Please feel free to contact us by phone, mail or email. You&apos;ll
           find our contact information below. Additionally, you may talk with
           one of our customer care consultants directly using our online chat
           feature. We&apos;re happy to answer your questions and provide you
-          with more information about Dream Big Corporation huge selection of
+          with more information about Dream Big Corporation  huge selection of
           products and services.
         </p>
       </div>
@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="w-[300px]">
           <h2 className="text-lg">Address</h2>
           <p>
-          DREAM BIG CORPORATION, Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
+          Dream Big Corporation , Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
             Road, Kongaon, Kalyan West, Thane mumbai- 421311
           </p>
         </div>

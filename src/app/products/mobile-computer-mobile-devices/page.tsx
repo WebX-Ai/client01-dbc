@@ -177,11 +177,11 @@ const page = () => {
           Durable, Portable, & Data Collecting Mobile Computer Devices
         </h1>
         <p className="text-lg font-light">
-          AB&R® mobile computers include options for durability, portability,
+          Dream Big Corporation mobile computers include options for durability, portability,
           accessories, and batteries to get the most return on investment. They
           are ready for all types of challenging environments, business types,
           and sizes. We&apos;ve provided several of our most popular products
-          listed below and there are more available. AB&R® can work with you to
+          listed below and there are more available. Dream Big Corporation can work with you to
           determine which device is suitable for your business. If you&apos;re
           looking for durability, portability, and integration with your current
           systems we have the product to fit your needs.

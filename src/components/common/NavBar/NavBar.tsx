@@ -19,19 +19,47 @@ const NavBar = () => {
     {
       id: 2,
       name: "solutions",
-      path: "/solutions",
+      path: "/#",
       subLinks: [
         {
           name: "ASSET TRACKING & MANAGEMENT",
-          path: "/asset-tracking-management",
+          path: "/solutions/asset-tracking-management",
         },
         {
           name: "CARD IDENTIFICATION",
-          path: "/card-identification",
+          path: "/solutions/card-identification",
         },
         {
           name: "INVENTORY TRACKING",
-          path: "/inventory-tracking",
+          path: "/solutions/inventory-tracking",
+        },
+        {
+          name: "MOBILE WORKFORCE",
+          path: "/solutions/mobile-workforce",
+        },
+        {
+          name: "PERSONAL TRACKING",
+          path: "/solutions/personal-tracking",
+        },
+        {
+          name: "PRINT AND APPLY",
+          path: "/solutions/print-apply",
+        },
+        {
+          name: "PRINT ON DEMAND",
+          path: "/solutions/print-on-demand",
+        },
+        {
+          name: "RFID",
+          path: "/solutions/rfid",
+        },
+        {
+          name: "RTLS",
+          path: "/solutions/rtls",
+        },
+        {
+          name: "TOOL TRACKING",
+          path: "/solutions/tool-tracking",
         },
       ],
     },
@@ -104,7 +132,7 @@ const NavBar = () => {
   ];
   return (
     <div className="relative z-40 container m-auto w-full pt-5 flex flex-col border-b-[1px] border-b-black/20">
-      <div className="flex gap-2 text-lg self-end">
+      <div className="flex gap-2 text-sm sm:text-lg self-end pr-5 sm:pr-0">
         {" "}
         <p className="text-primary">CALL US TODAY!</p>{" "}
         <a
@@ -121,9 +149,9 @@ const NavBar = () => {
           +91 9527376669
         </a>
       </div>
-      <div className="relative flex justify-between  items-center ">
-        <Link href={"/"} className="pb-5 ">
-          <div className="relative h-[75px] w-[200px] ">
+      <div className="relative flex justify-between  items-center p-5">
+        <Link href={"/"} className="sm:pb-5 ">
+          <div className="relative  h-[50px] sm:h-[75px] w-[200px] ">
             <Image src={Logo} alt="logo" fill className="object-contain" />
           </div>
         </Link>

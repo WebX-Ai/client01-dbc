@@ -39,13 +39,13 @@ const Home = () => {
   ];
   return (
     <div>
-      <div className="w-full bg-secondary/10 h-[700px] relative">
+      <div className="w-full bg-secondary/10 h-[600px] sm:h-[700px] relative">
         <div className="absolute h-full w-full">
           <div className="relative h-full w-full">
             <Image src={HeroImage} alt="hero" fill className="object-cover" />
           </div>
         </div>
-        <div className="absolute w-1/2 right-0 top-1/2 ">
+        <div className="absolute w-full sm:w-1/2 right-0 sm:top-1/2 top-[280px]">
           <p className="absolute bg-black/50 text-white p-4 text-lg">
             Serving businesses from across all industries with advanced
             technology to identify, track, and manage inventory and assets
@@ -62,10 +62,10 @@ const Home = () => {
         <h1 className="text-primary text-center text-2xl font-normal">
           SUCCESSFULL <span className="font-bold">SOLUTIONS </span>
         </h1>{" "}
-        <div className="flex items-center justify-center gap-10 w-full flex-wrap">
+        <div className="flex items-center justify-center gap-2 sm:gap-10 w-full flex-wrap">
           {solutions.map(({ id, name, icon }) => (
             <div
-              className="flex flex-col items-center justify-center text-center space-y-5 hover:shadow-lg rounded-lg p-5 h-[250px] w-[250px] text-primary"
+              className="flex flex-col items-center justify-center text-center space-y-5 hover:shadow-lg rounded-lg p-5 h-[200px] sm:h-[250px]  w-[250px] text-primary"
               key={id}
             >
               <FontAwesomeIcon icon={icon} size="3x" />

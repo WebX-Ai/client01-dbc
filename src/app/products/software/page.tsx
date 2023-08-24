@@ -19,7 +19,7 @@ const page = () => {
       type: "MATERIAL HANDLING SOFTWARE",
       products: [
         {
-          name: "ACCUVITI™ BY AB&R",
+          name: "ACCUVITI™ BY Dream Big Corporation ",
           img: "/images/products/software/handleing-software/Accuviti-by-ABR-340x150.png",
         },
       ],
@@ -42,7 +42,7 @@ const page = () => {
         <p className="text-lg font-light">
           We offer software products to simplify the everyday business
           complexities and allow you to focus on more important business
-          decisions. Software from AB&R® includes barcode, RFID, and card
+          decisions. Software from Dream Big Corporation includes barcode, RFID, and card
           label/tag designers. We are here to assist you every step of the way
           to make sure your software is up and running effectively. Ask us about
           basic setup and training services with your software purchase.

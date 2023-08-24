@@ -15,13 +15,13 @@ const page = () => {
     { id: 5, name: "FUN", icon: FunImg },
   ];
   return (
-    <div className=" space-y-24 p-6 container m-auto">
-      <div className="relative h-[200px] w-full">
-        <Image src={Banner} alt="contact" fill className="object-cover"/>
+    <div className="space-y-10 sm:space-y-24 p-5 container m-auto">
+      <div className="relative h-[80px] sm:h-[200px] w-full object-contain">
+        <Image src={Banner} alt="contact" fill className="object-contain" />
       </div>
       <div className="space-y-2">
         <h1 className="text-2xl">OUR STORY</h1>
-        <p className="text-lg font-light">
+        <p className="sm:text-lg font-light">
           Welcome to Dream Big Corporation Contact Us page! Dream Big
           Corporation is conveniently located in Kongaon, Kalyan West, Thane
           Mumbai and we provide products and services to companies nationwide.
@@ -37,13 +37,15 @@ const page = () => {
       <div className="space-y-2">
         <h1 className="text-2xl">OUR VALUES</h1>
 
-        <div className="flex flex-wrap gap-20">
+        <div className="flex flex-wrap gap-10 sm:gap-20">
           {VALUES.map(({ name, icon }, index) => (
             <div
               className="flex flex-col items-center justify-center gap-4"
               key={index}
             >
-              <Image src={icon} height={130} width={130} alt="img" />
+              <div className="relative h-[60px] w-[60px] sm:h-[130px] sm:w-[130px] object-contain">
+                <Image src={icon} alt="img" fill/>
+              </div>
               <h2 className="font-normal">{name}</h2>
             </div>
           ))}
@@ -51,7 +53,7 @@ const page = () => {
       </div>
       <div className="space-y-2">
         <h1 className="text-2xl">OUR MISSION</h1>
-        <p className="text-lg font-light">
+        <p className="sm:text-lg font-light">
           Our Mission is to work with companies to identify, track, and manage
           inventory and assets with the use of advancing Barcode and RFID
           Technology. Our solutions increase visibility throughout the supply
@@ -63,7 +65,7 @@ const page = () => {
 
       <div className="space-y-2">
         <h1 className="text-2xl">OUR VISION</h1>
-        <p className="text-lg font-light">
+        <p className="sm:text-lg font-light">
           Our Vision is to be your trusted expert for all Barcode and RFID
           technology products, services, software, support, and solutions to
           help your business achieve a competitive advantage with the most

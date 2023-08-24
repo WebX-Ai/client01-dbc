@@ -80,7 +80,7 @@ const page = () => {
           Master the art of scanning with our top-of-the-line barcode scanners
         </h1>
         <p className="text-lg font-light">
-          Barcode scanners from AB&R® range from many styles including;
+          Barcode scanners from Dream Big Corporation range from many styles including;
           Handheld, USB, Industrial, Bluetooth, Portable, and more. We carry all
           types of scanners from 1D to 2D and feature just a short list of our
           top products below.

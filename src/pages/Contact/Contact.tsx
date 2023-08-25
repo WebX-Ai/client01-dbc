@@ -9,28 +9,30 @@ const Contact = () => {
       <div className="space-y-2">
         <h1>How to Contact Dream Big Corporation </h1>
         <p>
-          Welcome to Dream Big Corporation  Contact Us page! Dream Big
+          Welcome to Dream Big Corporation Contact Us page! Dream Big
           Corporation is conveniently located in Kongaon, Kalyan West, Thane
           Mumbai and we provide products and services to companies nationwide.
           Please feel free to contact us by phone, mail or email. You&apos;ll
           find our contact information below. Additionally, you may talk with
           one of our customer care consultants directly using our online chat
           feature. We&apos;re happy to answer your questions and provide you
-          with more information about Dream Big Corporation  huge selection of
+          with more information about Dream Big Corporation huge selection of
           products and services.
         </p>
       </div>
-      <div className="flex gap-20">
-        <div className="w-[300px]">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-20">
+        <div className="w-full sm:w-[300px]">
           <h2 className="text-lg">Address</h2>
           <p>
-          Dream Big Corporation , Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
-            Road, Kongaon, Kalyan West, Thane mumbai- 421311
+            Dream Big Corporation , Ground Floor, Hariom Building, Nr. Ambika
+            Medical, Water Supply Road, Kongaon, Kalyan West, Thane mumbai-
+            421311
           </p>
         </div>
         <div className="">
           <p>
-            <span className="font-bold">Email:</span> dreambigcorporation22@gmail.com
+            <span className="font-bold">Email:</span>{" "}
+            dreambigcorporation22@gmail.com
           </p>
           <p>
             <span className="font-bold">Phone Number:</span> +91 9967489992 /
@@ -74,13 +76,6 @@ const Contact = () => {
               style={{ border: 0 }}
               loading="lazy"
             ></iframe>
-          </div>
-          <div className="space-y-2 sm:hidden">
-            <h2 className="sm:text-white">Address</h2>
-            <p>
-            Ground Floor, Hariom Building, Nr. Ambika Medical, Water Supply
-            Road, Kongaon, Kalyan West, Thane mumbai- 421311
-            </p>
           </div>
         </div>
       </div>

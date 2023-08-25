@@ -15,8 +15,8 @@ const Footer = () => {
   return (
     <div className=" bg-primary w-full">
       <div className="container m-auto p-6  text-white flex flex-col sm:flex-row sm:justify-between sm:items-center gap-8 ">
-        <div className="space-y-6 sm:space-y-2">
-          <div className="flex-col sm:flex sm:justify-between sm:items-center">
+        <div className="space-y-4 sm:space-y-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-5">
             <Link href={"/"} className="w-fit h-fit">
               <div className="relative h-[50px] w-[130px]  ">
                 <Image src={Logo} alt="logo" fill className="object-contain" />

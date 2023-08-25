@@ -10,6 +10,12 @@ import { useState } from "react";
 import Logo from "@/assets/Images/logo.png";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleDown,
+  faAngleRight,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -149,7 +155,7 @@ const NavBar = () => {
           +91 9527376669
         </a>
       </div>
-      <div className="relative flex justify-between  items-center p-5">
+      <div className="relative flex justify-between  items-center p-5 sm:p-0">
         <Link href={"/"} className="sm:pb-5 ">
           <div className="relative  h-[50px] sm:h-[75px] w-[200px] ">
             <Image src={Logo} alt="logo" fill className="object-contain" />
@@ -197,15 +203,12 @@ const NavBar = () => {
         </div>
         {toggle ? (
           <div
-            className="absolute top-[86px] left-0 bg-white w-full flex flex-col p-6 space-y-5 shadow-2xl "
+            className="absolute top-[86px] left-0 bg-white w-full flex flex-col p-6  shadow-2xl "
             onClick={() => setToggle(false)}
           >
-            <Link href={"/products"}>Products</Link>
-            <Link href={"/about-us"}>About Us</Link>
-            <Link href={"/contact-us"}>Contact</Link>
-            <button className="bg-primary text-white px-4 py-2 rounded-md font-medium w-fit">
-              Get in touch
-            </button>
+            {Links.map(({ id, name, path, subLinks }) => (
+              <Collapseable key={id} title={name} subLinks={subLinks} />
+            ))}
           </div>
         ) : null}
       </div>
@@ -214,3 +217,50 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+const Collapseable = ({
+  title,
+  subLinks,
+}: {
+  subLinks: {
+    name: string;
+    path: string;
+  }[];
+  title: string;
+}) => {
+  const [toggle, setToggle] = useState(false);
+
+  return (
+    <div className=" w-full uppercase text-base text-primary">
+      {subLinks.length == 0 ? (
+        <Link href={"/"}>
+          <div className="border-b border-b-gray-400 py-4 w-full">{title}</div>
+        </Link>
+      ) : (
+        <div
+          className="flex justify-between border-b border-b-gray-400 items-center py-4"
+          onClick={(e) => {
+            e.stopPropagation();
+            setToggle(!toggle);
+          }}
+        >
+          <div className="">{title}</div>
+          <div className="">
+            <FontAwesomeIcon icon={toggle ? faAngleDown : faAngleRight} />
+          </div>
+        </div>
+      )}
+      {toggle && (
+        <div className="pl-6 w-full">
+          {subLinks.map(({ name, path }, index) => (
+            <Link href={path} key={index}>
+              <div className="py-4 border-b border-b-gray-400 w-full">
+                {name}
+              </div>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};

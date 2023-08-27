@@ -176,7 +176,6 @@ const NavBar = () => {
           </div>
         </Link>
         <div className="flex gap-3 lg:hidden">
-          <PhoneIcon />
           {!toggle ? (
             <button onClick={() => setToggle(!toggle)}>
               <MenuIcon />

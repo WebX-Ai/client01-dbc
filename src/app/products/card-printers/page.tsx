@@ -32,43 +32,46 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
           src={"/images/products/card-printers/card-printer-banner.jpeg"}
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold">
-          Cards for safety, access control, and identification start with a
-          quality card printer
-        </h1>
-        <p className="text-lg font-light">
-          In addition to improved quality and security, card printers help to
-          lower costs and lead to better customer service. Choose from full
-          color or monochrome printers. Options range from Ethernet
-          connectivity, smart card, and magnetic stripe encoding, to lamination
-          for higher security and card durability. There is a printer to meet
-          all your business needs and we can help you find the right one; from
-          payment cards to driver&apos;s licenses, membership cards to employee
-          identification badges, gift cards to ski pass IDs, and much more.
-        </p>
-      </div>
-      <div className="space-y-4">
-        <h1 className="text-3xl font-medium border-b border-primary pb-4">
-          CARD PRINTERS
-        </h1>
-        <div className="space-y-20">
-          <div className="flex items-center gap-20 w-full flex-wrap">
-            {all_products.map((pro, index) => (
-              <div className="space-y-2" key={index}>
-                    <h2 className="font-medium text-lg">{pro.name}</h2>
-                <Image src={pro.img} alt="" width={150} height={150} />
-              </div>
-            ))}
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-2">
+          <h1 className="sm:text-4xl font-bold">
+            Cards for safety, access control, and identification start with a
+            quality card printer
+          </h1>
+          <p className="text-lg font-light">
+            In addition to improved quality and security, card printers help to
+            lower costs and lead to better customer service. Choose from full
+            color or monochrome printers. Options range from Ethernet
+            connectivity, smart card, and magnetic stripe encoding, to
+            lamination for higher security and card durability. There is a
+            printer to meet all your business needs and we can help you find the
+            right one; from payment cards to driver&apos;s licenses, membership
+            cards to employee identification badges, gift cards to ski pass IDs,
+            and much more.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <h1 className="sm:text-3xl font-medium border-b border-primary pb-4">
+            CARD PRINTERS
+          </h1>
+          <div className="space-y-20">
+          <div className="flex gap-5 sm:gap-10 w-full justify-center sm:justify-start flex-wrap">
+              {all_products.map((pro, index) => (
+                <div className="space-y-2" key={index}>
+                  <h2 className="font-medium text-lg">{pro.name}</h2>
+                  <Image src={pro.img} alt="" width={150} height={150} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

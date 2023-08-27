@@ -66,48 +66,50 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
           src={"/images/products/barcode-scanners/barcode-scanner-banner.jpeg"}
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold">
-          Master the art of scanning with our top-of-the-line barcode scanners
-        </h1>
-        <p className="text-lg font-light">
-          Barcode scanners from Dream Big Corporation range from many styles including;
-          Handheld, USB, Industrial, Bluetooth, Portable, and more. We carry all
-          types of scanners from 1D to 2D and feature just a short list of our
-          top products below.
-        </p>
-      </div>
-      <div className="space-y-4">
-        <h1 className="text-3xl font-medium border-b border-primary pb-4">
-          TYPE OF BARCODE SCANNERS
-        </h1>
-        <div className="space-y-20">
-          {all_products.map(({ products, type }, index) => (
-            <div className="space-y-5" key={index}>
-              <h1 className="text-2xl font-normal border-b-primary border-b pb-2">
-                {type}
-              </h1>
-              <div className="flex items-center gap-16 w-full flex-wrap">
-                {products.map((pro, index) => (
-                  <div className="space-y-2" key={index}>
-                    <h2 className="font-medium text-lg w-[200px]">
-                      {pro.name}
-                    </h2>
-                    <Image src={pro.img} alt="" width={150} height={150} />
-                  </div>
-                ))}
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-2">
+          <h1 className="sm:text-4xl font-bold">
+            Master the art of scanning with our top-of-the-line barcode scanners
+          </h1>
+          <p className="sm:text-lg font-light">
+            Barcode scanners from Dream Big Corporation range from many styles
+            including; Handheld, USB, Industrial, Bluetooth, Portable, and more.
+            We carry all types of scanners from 1D to 2D and feature just a
+            short list of our top products below.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <h1 className="sm:text-3xl font-medium border-b border-primary pb-4">
+            TYPE OF BARCODE SCANNERS
+          </h1>
+          <div className="space-y-20">
+            {all_products.map(({ products, type }, index) => (
+              <div className="space-y-5" key={index}>
+                <h1 className="sm:text-2xl font-normal border-b-primary border-b pb-2">
+                  {type}
+                </h1>
+                <div className="flex gap-5 sm:gap-10 w-full  flex-wrap">
+                  {products.map((pro, index) => (
+                    <div className="space-y-2" key={index}>
+                      <h2 className="font-medium text-lg w-[100px] sm:w-[200px]">
+                        {pro.name}
+                      </h2>
+                      <Image src={pro.img} alt="" width={150} height={150} />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -118,46 +118,53 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
-        <Image src={banner} alt="contact" fill className="object-cover" />
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
+        <Image
+          src={banner}
+          alt="contact"
+          fill
+          className="object-contain sm:object-fill"
+        />
       </div>
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold">
-          HIGH-QUALITY BARCODES ARE SECONDS AWAY WITH OUR WIDE RANGE OF BARCODE
-          PRINTERS
-        </h1>
-        <p className="text-lg font-light">
-          Dream Big coorporation offers printer types to meet the demands of
-          your business. Whether you&apos;re looking for an industrial printer
-          or mobile printer, a printer that is thermal or a thermal transfer
-          printer, we have the barcode printers your business needs. Dream Big
-          coorporation offers a short list of top barcode printers below but
-          works with many partners to bring you the printer to fit your
-          facilities specific needs.
-        </p>
-      </div>
-      <div className="space-y-4">
-        <h1 className="text-3xl font-medium border-b border-primary pb-4">
-          TYPES OF BARCODE PRINTERS
-        </h1>
-        <div className="space-y-20">
-          {all_products.map(({ products, type, desc }, index) => (
-            <div className="space-y-5" key={index}>
-              <h1 className="text-2xl font-normal border-b-primary border-b pb-2">
-                {type}
-              </h1>
-              <p className="text-lg font-light">{desc}</p>
-              <div className="flex items-center gap-10 w-full flex-wrap">
-                {products.map((pro, index) => (
-                  <div className="space-y-2" key={index}>
-                    <h2 className="font-medium text-lg">{pro.name}</h2>
-                    <Image src={pro.img} alt="" width={150} height={150} />
-                  </div>
-                ))}
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-2">
+          <h1 className="sm:text-4xl font-bold">
+            HIGH-QUALITY BARCODES ARE SECONDS AWAY WITH OUR WIDE RANGE OF
+            BARCODE PRINTERS
+          </h1>
+          <p className="sm:text-lg font-light">
+            Dream Big coorporation offers printer types to meet the demands of
+            your business. Whether you&apos;re looking for an industrial printer
+            or mobile printer, a printer that is thermal or a thermal transfer
+            printer, we have the barcode printers your business needs. Dream Big
+            coorporation offers a short list of top barcode printers below but
+            works with many partners to bring you the printer to fit your
+            facilities specific needs.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <h1 className="sm:text-3xl font-medium border-b border-primary pb-4">
+            TYPES OF BARCODE PRINTERS
+          </h1>
+          <div className="space-y-20">
+            {all_products.map(({ products, type, desc }, index) => (
+              <div className="space-y-5" key={index}>
+                <h1 className="text-2xl font-normal border-b-primary border-b pb-2">
+                  {type}
+                </h1>
+                <p className="text-lg font-light">{desc}</p>
+                <div className="flex items-center gap-10 w-full flex-wrap">
+                  {products.map((pro, index) => (
+                    <div className="space-y-2" key={index}>
+                      <h2 className="font-medium text-lg">{pro.name}</h2>
+                      <Image src={pro.img} alt="" width={150} height={150} />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

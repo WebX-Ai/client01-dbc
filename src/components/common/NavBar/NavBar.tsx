@@ -91,10 +91,10 @@ const NavBar = () => {
           name: "BARCODE SCANNERS",
           path: "/products/barcode-scanners",
         },
-        {
-          name: "RFID",
-          path: "/products/rfid",
-        },
+        // {
+        //   name: "RFID",
+        //   path: "/products/rfid",
+        // },
 
         {
           name: "SOFTWARE",
@@ -138,22 +138,36 @@ const NavBar = () => {
   ];
   return (
     <div className="relative z-40 container m-auto w-full pt-5 flex flex-col border-b-[1px] border-b-black/20">
-      <div className="flex gap-2 text-sm sm:text-lg self-end pr-5 sm:pr-0">
+      <div className="w-full flex gap-2 text-sm sm:text-lg pr-5 sm:pr-0  justify-end">
         {" "}
         <p className="text-primary">CALL US TODAY!</p>{" "}
-        <a
-          href="tel:+91 9967489992"
-          className="hover:underline text-red-600 font-bold"
-        >
-          +91 9967489992
-        </a>
-        /{" "}
-        <a
-          href="tel:+91 9527376669"
-          className="hover:underline text-red-600 font-bold"
-        >
-          +91 9527376669
-        </a>
+        <div className="flex flex-col sm:flex-row ">
+          <div className="">
+            <a
+              href="tel:+91 9967489992"
+              className="hover:underline text-red-600 font-bold"
+            >
+              +91 9967489992
+            </a>
+            <span className="mx-1">/</span>
+            <a
+              href="tel:+91 9527376669"
+              className="hover:underline text-red-600 font-bold"
+            >
+              +91 9527376669
+            </a>
+          </div>
+          <div className="self-end">
+            <span className="mx-1">/</span>
+
+            <a
+              href="tel:+91 9657777948"
+              className="hover:underline text-red-600 font-bold"
+            >
+              +91 9657777948
+            </a>
+          </div>
+        </div>
       </div>
       <div className="relative flex justify-between  items-center p-5 sm:p-0">
         <Link href={"/"} className="sm:pb-5 ">

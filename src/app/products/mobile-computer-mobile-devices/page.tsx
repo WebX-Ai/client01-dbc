@@ -161,49 +161,52 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
           src={
             "/images/products/mobile-computers/Mobile-Computers-Mobile-Devices_v2.jpg"
           }
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold">
-          Durable, Portable, & Data Collecting Mobile Computer Devices
-        </h1>
-        <p className="text-lg font-light">
-          Dream Big Corporation mobile computers include options for durability, portability,
-          accessories, and batteries to get the most return on investment. They
-          are ready for all types of challenging environments, business types,
-          and sizes. We&apos;ve provided several of our most popular products
-          listed below and there are more available. Dream Big Corporation can work with you to
-          determine which device is suitable for your business. If you&apos;re
-          looking for durability, portability, and integration with your current
-          systems we have the product to fit your needs.
-        </p>
-      </div>
-      <div className="space-y-4">
-        <div className="space-y-20">
-          {all_products.map(({ products, type }, index) => (
-            <div className="space-y-5" key={index}>
-              <h1 className="text-2xl font-normal border-b-primary border-b pb-2">
-                {type}
-              </h1>
-              <div className="flex items-start gap-16 w-full flex-wrap">
-                {products.map((pro, index) => (
-                  <div className="space-y-2" key={index}>
-                    <h2 className="font-medium text-lg">{pro.name}</h2>
-                    <Image src={pro.img} alt="" width={150} height={150} />
-                  </div>
-                ))}
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-2">
+          <h1 className="sm:text-4xl font-bold">
+            Durable, Portable, & Data Collecting Mobile Computer Devices
+          </h1>
+          <p className="sm:text-lg font-light">
+            Dream Big Corporation mobile computers include options for
+            durability, portability, accessories, and batteries to get the most
+            return on investment. They are ready for all types of challenging
+            environments, business types, and sizes. We&apos;ve provided several
+            of our most popular products listed below and there are more
+            available. Dream Big Corporation can work with you to determine
+            which device is suitable for your business. If you&apos;re looking
+            for durability, portability, and integration with your current
+            systems we have the product to fit your needs.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <div className="space-y-20">
+            {all_products.map(({ products, type }, index) => (
+              <div className="space-y-5" key={index}>
+                <h1 className="sm:text-2xl font-normal border-b-primary border-b pb-2">
+                  {type}
+                </h1>
+                <div className="flex gap-5 sm:gap-10 w-full flex-wrap">
+                  {products.map((pro, index) => (
+                    <div className="space-y-2" key={index}>
+                      <h2 className="font-medium text-lg">{pro.name}</h2>
+                      <Image src={pro.img} alt="" width={150} height={150} />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

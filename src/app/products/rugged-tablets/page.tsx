@@ -24,39 +24,40 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
-          src={
-            "/images/products/rugged-tablet/Rugged-Tablet-Computers.jpg"
-          }
+          src={"/images/products/rugged-tablet/Rugged-Tablet-Computers.jpg"}
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold">
-          Get the job done with the right equipment
-        </h1>
-        <p className="text-lg font-light">
-          Dream Big Corporation partners with the best hardware providers to bring you the
-          highest quality products. Rugged Tablet Computers from Dream Big Corporation include
-          Android and Windows OS. Screen and memory size on these tablets are
-          enterprise-grade with tested ruggedness for those harsh environments.
-          To Learn More click on the model information of the products below. If
-          you have questions on products, click on the contact us tab.
-        </p>
-      </div>
-      <div className="space-y-4">
-        <div className="space-y-20">
-          <div className="flex items gap-20 w-full flex-wrap">
-            {all_products.map((pro, index) => (
-              <div className="space-y-2" key={index}>
-                    <h2 className="font-medium text-lg">{pro.name}</h2>
-                <Image src={pro.img} alt="" width={200} height={150} />
-              </div>
-            ))}
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-2">
+          <h1 className="sm:text-4xl font-bold">
+            Get the job done with the right equipment
+          </h1>
+          <p className="sm:text-lg font-light">
+            Dream Big Corporation partners with the best hardware providers to
+            bring you the highest quality products. Rugged Tablet Computers from
+            Dream Big Corporation include Android and Windows OS. Screen and
+            memory size on these tablets are enterprise-grade with tested
+            ruggedness for those harsh environments. To Learn More click on the
+            model information of the products below. If you have questions on
+            products, click on the contact us tab.
+          </p>
+        </div>
+        <div className="space-y-4">
+          <div className="space-y-20">
+          <div className="flex gap-10 sm:gap-20 w-full justify-center sm:justify-start flex-wrap">
+              {all_products.map((pro, index) => (
+                <div className="space-y-2" key={index}>
+                  <h2 className="font-medium text-lg">{pro.name}</h2>
+                  <Image src={pro.img} alt="" width={200} height={150} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

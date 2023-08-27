@@ -24,24 +24,27 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-2">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
           src={"/images/products/Batteries-Accessories-banners.jpeg"}
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold">
-          Expect the unexpected. Be prepared with spare batteries and
-          performance-enhancing accessories
-        </h1>
-        <p className="text-lg font-light">
-          Spare batteries, additional charging stations, charging cradles, belt
-          clips, and other hands-free accessories are available from Dream Big Corporation ®.
-        </p>
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-2">
+          <h1 className="sm:text-4xl font-bold">
+            Expect the unexpected. Be prepared with spare batteries and
+            performance-enhancing accessories
+          </h1>
+          <p className="sm:text-lg font-light">
+            Spare batteries, additional charging stations, charging cradles,
+            belt clips, and other hands-free accessories are available from
+            Dream Big Corporation ®.
+          </p>
+        </div>
       </div>
     </div>
   );

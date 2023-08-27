@@ -58,11 +58,26 @@ const Footer = () => {
             <br /> Kongaon, Kalyan West, <br />
             Thane mumbai- 421311
           </p>
+          <div className="">
+            <a href="tel:+91 9967489992" className="hover:underline">
+              +91 9967489992
+            </a>{" "}
+            /{" "}
+            <a href="tel:+91 9527376669" className="hover:underline">
+              +91 9527376669
+            </a>{" "}
+            /{" "}
+            <a href="tel:+91 9657777948" className="hover:underline">
+              +91 9657777948
+            </a>
+          </div>
           <div className=" flex flex-col sm:flex-row gap-4  text-lg">
             <Link href={"/contact-us"} className="hover:underline">
               About us
             </Link>
-            <Link href={"/contact-us"} className="hover:underline">Contact us</Link>
+            <Link href={"/contact-us"} className="hover:underline">
+              Contact us
+            </Link>
           </div>
         </div>
       </div>

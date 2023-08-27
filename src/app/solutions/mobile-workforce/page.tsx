@@ -78,59 +78,60 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
           src={"/images/solutions/mobile-workforce/banner.jpeg"}
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-14">
-        <div className="space-y-2">
-          <h1 className="text-4xl font-bold">
-            MOVE YOUR ORGANIZATION WITH BETTER EQUIPMENT AND MOBILITY SOLUTIONS.
-          </h1>
-          <p className="text-lg font-light">
-            Our mobile solutions will keep your employees productive and
-            on-the-go. Your workforce needs the right tools that will lead your
-            business to an increase in performance and improvements on your
-            bottom line no matter where they are working.
-          </p>
-        </div>
-
-        <div className="space-y-2">
-          <h1 className="text-3xl font-medium border-primary ">
-            SOLUTIONS FOR A MOBILE WORKFORCE
-          </h1>
-          <div className="flex gap-10 w-full flex-wrap">
-            {solutions.map(({ id, name, icon }) => (
-              <div
-                className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary"
-                key={id}
-              >
-                <FontAwesomeIcon icon={icon} size="3x" />
-                <h2 className="font-bold text-2xl ">{name}</h2>
-              </div>
-            ))}
-          </div>{" "}
-        </div>
-
-        <div className="space-y-2">
-          <h1 className="text-3xl font-medium border-primary">
-            MOBILITY PRODUCTS FOR THE MOBILE WORKFORCE
-          </h1>
-          <div className="flex gap-10 w-full flex-wrap">
-            {products.map(({ id, name, icon, link }) => (
-              <Link href={link} key={id}>
-                <div className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary">
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-14">
+          <div className="space-y-2">
+            <h1 className="sm:text-4xl font-bold">
+              MOVE YOUR ORGANIZATION WITH BETTER EQUIPMENT AND MOBILITY
+              SOLUTIONS.
+            </h1>
+            <p className="sm:text-lg font-light">
+              Our mobile solutions will keep your employees productive and
+              on-the-go. Your workforce needs the right tools that will lead
+              your business to an increase in performance and improvements on
+              your bottom line no matter where they are working.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h1 className="sm:text-3xl font-medium border-primary ">
+              SOLUTIONS FOR A MOBILE WORKFORCE
+            </h1>
+            <div className="flex gap-5 sm:gap-10 w-full sm:justify-start justify-center flex-wrap">
+              {solutions.map(({ id, name, icon }) => (
+                <div
+                  className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary"
+                  key={id}
+                >
                   <FontAwesomeIcon icon={icon} size="3x" />
                   <h2 className="font-bold text-2xl ">{name}</h2>
                 </div>
-              </Link>
-            ))}
-          </div>{" "}
+              ))}
+            </div>{" "}
+          </div>
+          <div className="space-y-2">
+            <h1 className="sm:text-3xl font-medium border-primary">
+              MOBILITY PRODUCTS FOR THE MOBILE WORKFORCE
+            </h1>
+            <div className="flex gap-5 sm:gap-10 w-full sm:justify-start justify-center flex-wrap">
+              {products.map(({ id, name, icon, link }) => (
+                <Link href={link} key={id}>
+                  <div className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary">
+                    <FontAwesomeIcon icon={icon} size="3x" />
+                    <h2 className="font-bold text-2xl ">{name}</h2>
+                  </div>
+                </Link>
+              ))}
+            </div>{" "}
+          </div>
         </div>
       </div>
     </div>

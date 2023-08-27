@@ -21,13 +21,21 @@ const Contact = () => {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-20">
-        <div className="w-full sm:w-[300px]">
-          <h2 className="text-lg">Address</h2>
-          <p>
-            Dream Big Corporation , Ground Floor, Hariom Building, Nr. Ambika
-            Medical, Water Supply Road, Kongaon, Kalyan West, Thane mumbai-
-            421311
-          </p>
+        <div className="space-y-4">
+          <div className="w-full sm:w-[300px]">
+            <h2 className="text-lg">Corporate Office</h2>
+            <p>
+              Ground Floor Hari Om Building,Opp.Kalyan Bhiwandi Road, Water
+              Supply Road, Kon-Bhiwandi,Kalyan West Dist.Thane-421311 MUMBAI
+            </p>
+          </div>
+          <div className="w-full sm:w-[300px]">
+            <h2 className="text-lg">Factory Addres</h2>
+            <p>
+              G-01,D WING,GROUND FLOOR,ANAND HOMES, Mangalwar Baazar
+              Road,Kongaon ,Bhiwandi Dist.Thane-421311
+            </p>
+          </div>
         </div>
         <div className="">
           <p>
@@ -36,7 +44,7 @@ const Contact = () => {
           </p>
           <p>
             <span className="font-bold">Phone Number:</span> +91 9967489992 /
-            +91 9527376669
+            +91 9527376669 / +91 9657777948
           </p>
 
           <p>
@@ -63,8 +71,9 @@ const Contact = () => {
             Send
           </button>
           <p className="text-primary font-bold text-base">
-            Or call <a href="tel:+91 9967489992">+91 9967489992</a> /{" "}
-            <a href="tel:+91 91 9527376669">+91 9527376669</a>
+            Or call <a href="tel:+91 9967489992" className="hover:underline">+91 9967489992</a> /{" "}
+            <a href="tel:+91 9527376669" className="hover:underline">+91 9527376669</a> /{" "}
+            <a href="tel:+91 9657777948" className="hover:underline">+91 9657777948</a>
           </p>
         </form>
         <div className="space-y-4 flex-1 sm:relative ">

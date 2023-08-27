@@ -78,66 +78,66 @@ const page = () => {
     },
   ];
   return (
-    <div className="p-6 container m-auto space-y-6">
-      <div className="relative h-[250px] w-full ">
+    <div className="space-y-6">
+      <div className="relative h-[80px] sm:h-[250px] w-full ">
         <Image
           src={"/images/solutions/rlts/banner.jpeg"}
           alt="contact"
           fill
-          className="object-cover"
+          className="object-contain sm:object-fill"
         />
       </div>
-      <div className="space-y-14">
-        <div className="space-y-2">
-          <h1 className="text-4xl font-bold">
-            The Important Things Can’t Wait{" "}
-          </h1>
-        </div>
-        <div className="space-y-2">
-          <h1 className="text-3xl font-normal">
-            WITH RTLS THEY DON’T HAVE TO.
-          </h1>
-          <p className="text-lg font-light">
-            When you can track everything and immediately put insights derived
-            from real-time data to work, you can accomplish anything. RTLS
-            enables you to put that into practice, whether it be for your
-            assets, yard, materials, or personnel.
-            <br />
-            By pinpointing asset location, status and motion, you can increase
-            control, minimize downtime and maximize performance. By having
-            visibility to goods, you can streamline workflows, ensure
-            replenishment and expedite shipping. And by monitoring your
-            workforce, you can better ensure safety, increase connectivity and
-            enhance compliance processes.
-          </p>
-        </div>
-
-        <div className="space-y-2">
-          <h1 className="text-3xl font-normal">WHAT IS RTLS?</h1>
-          <p className="text-lg font-light">
-            Real-time locating systems (RTLS) are used to automatically identify
-            and track the location of objects or people in real time within a
-            defined area, allowing you to manage the flow of things through your
-            business. With the use of RFID technology, the system and tracked
-            item communicate in real time, or near real time, to provide you
-            exceptional visibility.
-          </p>
-        </div>
-
-        <div className="space-y-2">
-          <h1 className="text-3xl font-medium border-primary">
-            DID YOU KNOW? RTLS CAN BE USED FOR…
-          </h1>
-          <div className="flex gap-10 w-full flex-wrap">
-            {products.map(({ id, name, icon, link }) => (
-              <Link href={link} key={id}>
-                <div className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary">
-                  <Image src={icon} height={100} width={100} alt="img" />
-                  <h2 className="font-bold text-2xl ">{name}</h2>
-                </div>
-              </Link>
-            ))}
-          </div>{" "}
+      <div className="p-6 container m-auto space-y-6">
+        <div className="space-y-14">
+          <div className="space-y-2">
+            <h1 className="sm:text-4xl font-bold">
+              The Important Things Can’t Wait{" "}
+            </h1>
+          </div>
+          <div className="space-y-2">
+            <h1 className="sm:text-3xl font-normal">
+              WITH RTLS THEY DON’T HAVE TO.
+            </h1>
+            <p className="sm:text-lg font-light">
+              When you can track everything and immediately put insights derived
+              from real-time data to work, you can accomplish anything. RTLS
+              enables you to put that into practice, whether it be for your
+              assets, yard, materials, or personnel.
+              <br />
+              By pinpointing asset location, status and motion, you can increase
+              control, minimize downtime and maximize performance. By having
+              visibility to goods, you can streamline workflows, ensure
+              replenishment and expedite shipping. And by monitoring your
+              workforce, you can better ensure safety, increase connectivity and
+              enhance compliance processes.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h1 className="sm:text-3xl font-normal">WHAT IS RTLS?</h1>
+            <p className="sm:text-lg font-light">
+              Real-time locating systems (RTLS) are used to automatically
+              identify and track the location of objects or people in real time
+              within a defined area, allowing you to manage the flow of things
+              through your business. With the use of RFID technology, the system
+              and tracked item communicate in real time, or near real time, to
+              provide you exceptional visibility.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h1 className="sm:text-3xl font-medium border-primary">
+              DID YOU KNOW? RTLS CAN BE USED FOR…
+            </h1>
+            <div className="flex gap-5 sm:gap-10 w-full justify-center sm:justify-start flex-wrap">
+              {products.map(({ id, name, icon, link }) => (
+                <Link href={link} key={id}>
+                  <div className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[320px] h-fit sm:h-[200px] text-primary">
+                    <Image src={icon} height={100} width={100} alt="img" />
+                    <h2 className="font-bold text-2xl ">{name}</h2>
+                  </div>
+                </Link>
+              ))}
+            </div>{" "}
+          </div>
         </div>
       </div>
     </div>

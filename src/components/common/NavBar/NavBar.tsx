@@ -161,7 +161,7 @@ const NavBar = () => {
             <Image src={Logo} alt="logo" fill className="object-contain" />
           </div>
         </Link>
-        <div className="flex gap-3 sm:hidden">
+        <div className="flex gap-3 lg:hidden">
           <PhoneIcon />
           {!toggle ? (
             <button onClick={() => setToggle(!toggle)}>
@@ -173,7 +173,7 @@ const NavBar = () => {
             </button>
           )}
         </div>
-        <div className="h-[88px] bg-white space-x-10 hidden sm:flex items-center text-gray-500 ">
+        <div className="h-[88px] bg-white space-x-10 hidden lg:flex items-center text-gray-500 ">
           {Links.map(({ id, name, path, subLinks }) => (
             <Link
               key={id}
@@ -201,17 +201,22 @@ const NavBar = () => {
             </Link>
           ))}
         </div>
-        {toggle ? (
-          <div
-            className="absolute top-[86px] left-0 bg-white w-full flex flex-col p-6  shadow-2xl "
-            onClick={() => setToggle(false)}
-          >
-            {Links.map(({ id, name, path, subLinks }) => (
-              <Collapseable key={id} title={name} subLinks={subLinks} />
-            ))}
-          </div>
-        ) : null}
       </div>
+      {toggle ? (
+        <div
+          className=" top-[86px] left-0 bg-white w-full flex flex-col p-6 shadow-xl md:shadow-none"
+          onClick={() => setToggle(false)}
+        >
+          {Links.map(({ id, name, path, subLinks }) => (
+            <Collapseable
+              key={id}
+              title={name}
+              subLinks={subLinks}
+              path={path}
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 };
@@ -221,19 +226,21 @@ export default NavBar;
 const Collapseable = ({
   title,
   subLinks,
+  path,
 }: {
   subLinks: {
     name: string;
     path: string;
   }[];
   title: string;
+  path: string;
 }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
     <div className=" w-full uppercase text-base text-primary">
       {subLinks.length == 0 ? (
-        <Link href={"/"}>
+        <Link href={path}>
           <div className="border-b border-b-gray-400 py-4 w-full">{title}</div>
         </Link>
       ) : (

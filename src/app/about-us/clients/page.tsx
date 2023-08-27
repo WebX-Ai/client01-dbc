@@ -20,7 +20,7 @@ const page = () => {
           src={"/images/aboutus/clients/banner.jpeg"}
           alt="contact"
           fill
-          className="object-contain"
+          className="object-contain sm:object-fill"
         />
       </div>
       <div className="p-6 container m-auto space-y-6">
@@ -42,7 +42,7 @@ const page = () => {
             <div className="flex items-center justify-center sm:w-3/4 gap-10 flex-wrap">
               {CLIENTS.map((link, index) => (
                 <div
-                  className="relative h-[60px] sm:h-[100px] sm:w-[140px] w-[120px] overflow-hidden "
+                  className="relative h-[60px] sm:h-[100px] sm:w-[140px] w-[130px] overflow-hidden "
                   key={index}
                 >
                   <Image

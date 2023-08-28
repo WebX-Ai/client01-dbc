@@ -83,7 +83,7 @@ const Home = () => {
           <div className="flex items-center justify-center sm:w-9/12 gap-5 flex-wrap">
             {products.map(({ id, product_name, thumbnail }, index) => (
               <div
-                className="relative h-[60px] sm:h-[80px] sm:w-[130px] w-[100px] overflow-hidden "
+                className="relative h-[60px] sm:h-[80px] sm:w-[130px] w-[80px] overflow-hidden "
                 key={index}
               >
                 <Image

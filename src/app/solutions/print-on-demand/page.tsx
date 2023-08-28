@@ -43,7 +43,7 @@ const page = () => {
           <div className="">
             <p className="sm:text-lg font-light">
               Dream Big Corporation offers Print On Demand solutions for any
-              type of business. Decrease your company’s footprint by only using
+              type of business. Decrease your company&apos;s footprint by only using
               the supplies you need when you need them, lessening your impact on
               the environment and lowering costs.
             </p>

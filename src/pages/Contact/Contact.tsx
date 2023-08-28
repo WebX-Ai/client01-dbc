@@ -50,9 +50,19 @@ const Contact = () => {
               <span className="font-bold">Email:</span>{" "}
               dreambigcorporation22@gmail.com
             </p>
-            <p>
-              <span className="font-bold">Phone Number:</span> +91 9967489992 /
-              +91 9527376669 / +91 9657777948
+            <p className="  text-base">
+              <span className="font-bold">Phone Number: </span>
+              <a href="tel:+91 9967489992" className="hover:underline">
+                +91 9967489992
+              </a>{" "}
+              /{" "}
+              <a href="tel:+91 9527376669" className="hover:underline">
+                +91 9527376669
+              </a>{" "}
+              /{" "}
+              <a href="tel:+91 9657777948" className="hover:underline">
+                +91 9657777948
+              </a>
             </p>
             <p>
               <span className="font-bold">Office Hours:</span> Monday - Friday 8
@@ -62,19 +72,20 @@ const Contact = () => {
         </div>
         <div className="flex flex-col sm:flex-row-reverse gap-10">
           <form action="" className="space-y-4 sm:flex-1">
-            <FormInputLabel label="Name" placeholder="john doe" type="text" />
+            <FormInputLabel label="Name" placeholder="john doe" type="text" required/>
             <FormInputLabel
               label="Email"
               placeholder="johndoe@gmail.com"
               type="email"
+              required
             />
             <FormInputLabel
               label="Mobile No."
               placeholder="+91 9158321091"
               type="tel"
             />
-            <FormInputLabel label="Message" type="text" />
-            <button className="bg-primary text-white px-4 py-2 rounded-md font-medium">
+            <FormInputLabel label="Message" type="text" required />
+            <button className="bg-primary text-white px-4 py-2 rounded-md font-medium" type="submit">
               Send
             </button>
             <p className="text-primary font-bold text-base">

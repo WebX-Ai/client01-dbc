@@ -174,7 +174,7 @@ const page = () => {
             <div className="flex gap-5 sm:gap-10 w-full justify-center sm:justify-start flex-wrap">
               {solutions.map(({ id, name, icon }) => (
                 <div
-                className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-fit sm:h-[200px] text-primary"
+                  className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-fit sm:h-[200px] text-primary"
                   key={id}
                 >
                   <FontAwesomeIcon icon={icon} size="3x" />
@@ -189,19 +189,20 @@ const page = () => {
             </h1>
             <div className="flex gap-5 sm:gap-10 w-full justify-center sm:justify-start flex-wrap">
               {services.map(({ id, name, icon, link }) => (
-                <Link href={link} key={id}>
-                  <div
-                className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-fit sm:h-[200px] text-primary"
+                <div
+                  key={id}
+                  className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-fit sm:h-[200px] text-primary"
                 >
-                    <FontAwesomeIcon icon={icon} size="3x" />
-                    <h2 className="font-bold text-2xl ">{name}</h2>
-                  </div>
-                </Link>
+                  <FontAwesomeIcon icon={icon} size="3x" />
+                  <h2 className="font-bold text-2xl ">{name}</h2>
+                </div>
               ))}
             </div>{" "}
           </div>
           <div className="space-y-2">
-            <h1 className="sm:text-3xl font-medium border-primary ">BENEFITS</h1>
+            <h1 className="sm:text-3xl font-medium border-primary ">
+              BENEFITS
+            </h1>
             <ul className="list-disc ml-5">
               <li>Near 100% inventory accuracy</li>
               <li>Near 100% order and shipping accuracy</li>
@@ -224,14 +225,13 @@ const page = () => {
             </p>
             <div className="flex gap-5 sm:gap-10 w-full justify-center sm:justify-start flex-wrap">
               {products.map(({ id, name, icon, link }) => (
-                <Link href={link} key={id}>
-                  <div 
+                <div
+                  key={id}
                   className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary"
-                  >
-                    <FontAwesomeIcon icon={icon} size="3x" />
-                    <h2 className="font-bold text-2xl ">{name}</h2>
-                  </div>
-                </Link>
+                >
+                  <FontAwesomeIcon icon={icon} size="3x" />
+                  <h2 className="font-bold text-2xl ">{name}</h2>
+                </div>
               ))}
             </div>{" "}
           </div>

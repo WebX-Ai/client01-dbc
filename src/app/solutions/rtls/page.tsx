@@ -91,12 +91,12 @@ const page = () => {
         <div className="space-y-14">
           <div className="space-y-2">
             <h1 className="sm:text-4xl font-bold">
-              The Important Things Can’t Wait{" "}
+              The Important Things Can&apos;t Wait{" "}
             </h1>
           </div>
           <div className="space-y-2">
             <h1 className="sm:text-3xl font-normal">
-              WITH RTLS THEY DON’T HAVE TO.
+              WITH RTLS THEY DON&apos;T HAVE TO.
             </h1>
             <p className="sm:text-lg font-light">
               When you can track everything and immediately put insights derived
@@ -129,12 +129,13 @@ const page = () => {
             </h1>
             <div className="flex gap-5 sm:gap-10 w-full justify-center sm:justify-start flex-wrap">
               {products.map(({ id, name, icon, link }) => (
-                <Link href={link} key={id}>
-                  <div className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[320px] h-fit sm:h-[200px] text-primary">
-                    <Image src={icon} height={100} width={100} alt="img" />
-                    <h2 className="font-bold text-2xl ">{name}</h2>
-                  </div>
-                </Link>
+                <div
+                  key={id}
+                  className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[320px] h-fit sm:h-[200px] text-primary"
+                >
+                  <Image src={icon} height={100} width={100} alt="img" />
+                  <h2 className="font-bold text-2xl ">{name}</h2>
+                </div>
               ))}
             </div>{" "}
           </div>

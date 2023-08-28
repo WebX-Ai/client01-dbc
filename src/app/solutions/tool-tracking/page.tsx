@@ -90,7 +90,7 @@ const page = () => {
       <div className="p-6 container m-auto space-y-6">
         <div className="space-y-14">
           <div className="space-y-2">
-            <h1 className="sm:text-4xl font-bold">IT’S WORKING TIME</h1>
+            <h1 className="sm:text-4xl font-bold">IT&apos;S WORKING TIME</h1>
           </div>
           <div className="space-y-2">
             <h1 className="sm:text-3xl font-normal">
@@ -103,8 +103,8 @@ const page = () => {
               costing you time, money and resources.
               <br />
               Dream Big Corporation provides barcode and RFID tracking solutions
-              and software that can address your company’s needs and save you
-              precious resources. We’re all about making you better, so you can
+              and software that can address your company&apos;s needs and save you
+              precious resources. We&apos;re all about making you better, so you can
               keep doing what you do best!
             </p>
           </div>
@@ -160,9 +160,9 @@ const page = () => {
           <div className="space-y-2">
             <h1 className="sm:text-3xl font-normal">TOOL TRACKING SOFTWARE</h1>
             <p className="sm:text-lg font-light">
-              Whether you’re looking to incorporate barcodes or want an RFID
+              Whether you&apos;re looking to incorporate barcodes or want an RFID
               solution, we have the that can organize the data collected,
-              providing full visibility of all tagged tools’ locations, repair
+              providing full visibility of all tagged tools&apos; locations, repair
               history, and assigned employee.
             </p>
           </div>

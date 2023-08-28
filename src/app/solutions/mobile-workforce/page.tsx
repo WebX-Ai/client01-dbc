@@ -123,12 +123,13 @@ const page = () => {
             </h1>
             <div className="flex gap-5 sm:gap-10 w-full sm:justify-start justify-center flex-wrap">
               {products.map(({ id, name, icon, link }) => (
-                <Link href={link} key={id}>
-                  <div className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary">
-                    <FontAwesomeIcon icon={icon} size="3x" />
-                    <h2 className="font-bold text-2xl ">{name}</h2>
-                  </div>
-                </Link>
+                <div
+                  className="flex items-center justify-center text-center space-x-5 hover:shadow-lg rounded-lg p-10 w-[300px] h-[200px] text-primary"
+                  key={id}
+                >
+                  <FontAwesomeIcon icon={icon} size="3x" />
+                  <h2 className="font-bold text-2xl ">{name}</h2>
+                </div>
               ))}
             </div>{" "}
           </div>

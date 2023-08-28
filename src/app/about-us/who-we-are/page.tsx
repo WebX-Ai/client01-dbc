@@ -105,7 +105,7 @@ const page = () => {
                 experts in the industries they serve. They are trained by
                 factory experts in proper application and support of technology.
                 Regular factory training is mandatory for all Reps, to assure
-                their clients of the right product to fit the client’s
+                their clients of the right product to fit the client&apos;s
                 application. Whether your requirement is for a solution to a
                 time and attendance problem, or if you need to integrate a
                 barcode scanner with a scale for shipping; whether you need to
@@ -141,7 +141,7 @@ const page = () => {
                 dedicated to providing the highest level of customer
                 satisfaction in sales and customer support. Let our experience
                 and commitment to excellence put barcode technology to work for
-                you today. If you have any questions or comments, please don’t
+                you today. If you have any questions or comments, please don&apos;t
                 hesitate to contact us.
               </p>
             </div>

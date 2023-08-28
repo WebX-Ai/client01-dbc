@@ -56,7 +56,7 @@ const Footer = () => {
             Ground Floor, Hariom Building,
             <br /> Nr. Ambika Medical, Water Supply Road,
             <br /> Kongaon, Kalyan West, <br />
-            Thane mumbai- 421311
+            Thane, Mumbai- 421311
           </p>
           <div className="">
             <a href="tel:+91 9967489992" className="hover:underline">

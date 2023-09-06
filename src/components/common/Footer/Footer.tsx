@@ -53,10 +53,13 @@ const Footer = () => {
         </div>
         <div className="space-y-5 sm:space-y-2 sm:flex flex-col items-end">
           <p className="w-full text-left sm:text-right">
-            Ground Floor, Hariom Building,
-            <br /> Nr. Ambika Medical, Water Supply Road,
-            <br /> Kongaon, Kalyan West, <br />
-            Thane, Mumbai- 421311
+            <span className="font-bold text-lg">Corporate Office Address</span>
+            <br />
+            Ground Floor Hari Om Building,
+            <br />
+            Opp.Kalyan Bhiwandi Road, Water Supply Road,
+            <br /> Kon-Bhiwandi, Kalyan West Dist.Thane,
+            <br /> Mumbai - 421311
           </p>
           <div className="">
             <a href="tel:+91 9967489992" className="hover:underline">

@@ -11,7 +11,7 @@ interface PropsType
 const FormInputLabel = ({ label, ...rest }: PropsType) => {
   return (
     <div className="flex flex-col space-y-2">
-      <label htmlFor="" className="text-base font-semibold text-primary">
+      <label htmlFor={rest.name} className="text-base font-semibold text-primary">
         {label}
       </label>
       <input

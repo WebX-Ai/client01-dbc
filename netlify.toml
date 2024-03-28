@@ -2,9 +2,6 @@
 [build]
   command = "yarn run build"
   publish = "out"  # Update the publish directory
-  environment = { NEXT_PRIVATE_TARGET = "" }
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    NEXT_PRIVATE_TARGET = ""  # Ensure this is empty to disable the plugin

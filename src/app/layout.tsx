@@ -12,16 +12,16 @@ const inter = Roboto({
 });
 
 export const metadata = {
-  title: "Dream Big Corporation",
+  title: "DBC GLOBAL SOLUTION PVT. LTD.",
   description:
     "Dream Big Corporation. Identify. Track. Manage. A proven solutions integrator for increased productivity and efficiency in your supply chain.",
   keywords:
     "Barcode, RFID, Labels, Software, Mobile Devices, Printers, Services, Solutions, Zebra, Honeywell,lenovo, dlink,godex,acer,rugtek,tsc, epson,newland,decade, SCANSMART ID CARD, SCANSMART INVENTORY, SCANSMART ID CARD, TEMPERATURE SCANNING , PRE-PRINTED LABELS, CUSTOM PRE-PRINTED LABELS, INDUSTRIAL PRINTERS, DESKTOP PRINTERS, MOBILE PRINTERS, CARD PRINTERS,HANDHELD BARCODE SCANNERS,FIXED SCANNERS, rugged tablet computers, RUGGED MOBILE DEVICES, WEARABLE MOBILE COMPUTERS & SCANNERS, FIXED/MOUNTED MOBILE COMPUTER DEVICES",
   openGraph: {
-    title: "Dream Big Corporation",
+    title: "DBC GLOBAL SOLUTION PVT. LTD.",
     description:
       "Dream Big Corporation. Identify. Track. Manage. A proven solutions integrator for increased productivity and efficiency in your supply chain.",
-    images: 'https://www.dreambigcorporation.com/images/logo.png',
+    images: 'https://www.dbcgroup.co.in/images/logo.png',
   },
 };
 

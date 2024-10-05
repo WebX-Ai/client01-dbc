@@ -49,7 +49,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <p>© Copyright 2022 Deam Big Corporation.</p>
+          <p>© Copyright 2024 DBC GLOBAL SOLUTION PVT. LTD.</p>
         </div>
         <div className="space-y-5 sm:space-y-2 sm:flex flex-col items-end">
           <p className="w-full text-left sm:text-right">

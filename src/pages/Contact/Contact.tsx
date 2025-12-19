@@ -54,20 +54,11 @@ const Contact = () => {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-20">
           <div className="space-y-4">
             <div className="w-full sm:w-[300px]">
-              <h2 className="text-lg">Corporate Office Address</h2>
+              <h2 className="text-lg">Corporate & Office Address</h2>
               <p>
-                Ground Floor Hari Om Building,Opp.Kalyan Bhiwandi Road, Water
-                Supply Road, Kon-Bhiwandi,Kalyan West Dist.Thane-421311 MUMBAI
+                Asmeeta Textile Park, E6B, Building, Unit No. 15, Kalyan-Bhiwandi Road, Kongaon, Kalyan West, Thane - 421311 Mumbai
               </p>
             </div>
-            <div className="w-full sm:w-[300px]">
-              <h2 className="text-lg">Factory Address</h2>
-              <p>
-                G-01,D WING,GROUND FLOOR,ANAND HOMES, Mangalwar Baazar
-                Road,Kongaon ,Bhiwandi Dist.Thane-421311
-              </p>
-            </div>
-          </div>
           <div className="">
             <p>
               <span className="font-bold">Email:</span>{" "}
@@ -150,7 +141,7 @@ const Contact = () => {
           <div className="space-y-4 flex-1 sm:relative ">
             <div className="h-[300px] sm:h-full w-full  rounded-lg overflow-hidden border-2 border-secondary/30">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15066.965495104121!2d73.1051151!3d19.2501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7974dafe88f01%3A0x4f483da59b4878d!2sDREAM%20BIG%20CORPORATION!5e0!3m2!1sen!2sin!4v1688932351608!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.647272022761!2d73.10002307547883!3d19.25419839635347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7973273c05d5d%3A0xdd706af502f3b591!2sDBC%20GLOBAL%20SOLUTION%20PVT.%20LTD.%20%26%20DREAM%20BIG%20CORPORATION!5e0!3m2!1sen!2sin!4v1766125236904!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
